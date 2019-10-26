@@ -5,7 +5,7 @@
 
 ### Установка и тестирование
 
-- для уcтановки пакета необходимо клонировать репозиторий в свою систему выполнив **git clone git@github.com:kestkest/topic_detector.git**.
+- сначала копируем репозиторий себе выполнив **git clone git@github.com:kestkest/topic_detector.git**. Потом ставим сам пакет выполнив **python setup.py install**.
 
 - для запуска сервера выполняем либо **python -m topic_detector.server** либо **run_sanic**. По умолчанию сервер стартует на 8000 порту. Для того, чтобы запустить его на произвольном порту можно передать опцию --port. Например **python -m topic_detector.server --port 5785** **или run_sanic --port 1234**.
 
