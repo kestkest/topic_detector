@@ -28,7 +28,7 @@ setuptools.setup(
     python_requires='>=3.7',
     entry_points={
         'console_scripts': [
-            'snek=topic_detector.server:main'
+            'run_sanic=topic_detector.server:main'
         ]
     },
     include_package_data=True
