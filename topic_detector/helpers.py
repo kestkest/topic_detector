@@ -10,12 +10,15 @@ async def get_topics(topics, text):
     for topic in topics:
         for phrase in topics[topic]:
             try:
-                if phrases[phrase].issubset(text):
+                if phrases[phrase] and topic not in result:
                     result.add(topic)
             except KeyError:
-                phrases[phrase] = set(phrase.split())
-                if phrases[phrase].issubset(text):
-                    result.add(topic)
+                if all([word in text for word in phrase.split()]):
+                    phrases[phrase] = True
+                    if topic not in result:
+                        result.add(topic)
+                else:
+                    phrases[phrase] = False
 
     result = list(result)
     return result

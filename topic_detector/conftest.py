@@ -1,6 +1,6 @@
 import pytest
 
-from topic_detector.server import create_app
+from .server import create_app
 
 
 @pytest.fixture

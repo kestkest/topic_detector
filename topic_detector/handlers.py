@@ -1,7 +1,7 @@
 from sanic.response import json
 
-from topic_detector.data import topics
-from topic_detector.helpers import get_topics
+from .data import topics
+from .helpers import get_topics
 
 
 async def get_topic(request):

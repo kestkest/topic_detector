@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from sanic import Sanic
 
-from topic_detector.handlers import get_topic
+from .handlers import get_topic
 
 
 def create_app():
