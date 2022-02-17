@@ -21,7 +21,7 @@ setuptools.setup(
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     install_requires=[
-        'sanic==19.9.0',
+        'sanic==20.12.6',
         'pytest==5.2.2',
         'pytest-sanic==1.1.2',
     ],
